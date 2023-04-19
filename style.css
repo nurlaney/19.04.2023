@@ -1,0 +1,54 @@
+body{
+    margin: 100px;
+}
+
+html{
+    font-size: 20px;
+}
+
+.h1{
+    font-size: 1%;
+    width: 80px;
+    height: 80px;
+    background-color: turquoise;
+    border-radius: 8px;
+}
+
+.cube:hover{
+    transform: rotate(90deg);
+    /* transition: all 0.5s ease-in-out; */
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 0.1s;
+}
+
+li > li {
+    background-color: red;
+    margin-bottom: 5px;
+}
+
+
+div + p {  
+    color: green;  
+ } 
+
+
+ .example-parent{
+    display: flex;
+ }
+
+ .example-parent .elem{
+    height: 200px;
+    width: 150px;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 20px;
+    border-radius: 8px;
+    transition: transform 0.7s ease;
+ }
+
+ .example-parent .elem:hover{
+    transform: translateY(-20px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+ }
